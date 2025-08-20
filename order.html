@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GizmoGrove Electronics - Order</title>
+<link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo"><a href="index.html">GizmoGrove Electronics</a></h1>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Place an Order</h2>
+  <form id="orderForm">
+    <label>Full Name<br/><input type="text" id="name" required /></label><br/>
+    <label>Email<br/><input type="email" id="email" required /></label><br/>
+    <label>Phone<br/><input type="tel" id="phone" required /></label><br/>
+    <label>Address<br/><textarea id="address" required></textarea></label><br/>
+    <label>Product<br/>
+      <select id="productSelect">
+        
+<option value="Cooper wiring">copper wiring- R 1999</option>
+<option value="Aluminium">Aluminium - R 7499</option>
+<option value="Gold connectors">Gold connectors - R 899</option>
+
+      </select>
+    </label><br/>
+    <label>Quantity<br/><input type="number" id="quantity" min="1" value="1" required /></label><br/>
+    <button type="submit">Place Order</button>
+  </form>
+
+  <div id="orderResult" class="hidden"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Conductive materials  | Phone: 071-100-0001</p>
+  </div>
+</footer>
+
+<script src="scripts/app.js"></script>
+</body>
+</html>
